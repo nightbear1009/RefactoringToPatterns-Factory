@@ -13,7 +13,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
     public void testNode(){
         Parser parser = new Parser();
-        parser.setNodeDecode(true);
+        parser.getStringNodeParingOption().setNodeDecode(true);
         Node node = StringParser.find(parser);
         assertEquals(node.getTitle(),"Decode");
     }

@@ -16,12 +16,6 @@ public interface Node {
     }
 
     public static class StringNode implements Node{
-        public static Node createStringNode(boolean shouldDecodeNode){
-            if(shouldDecodeNode){
-                return new Node.DecodingNode();
-            }
-            return new Node.StringNode();
-        }
 
         @Override
         public String getTitle() {

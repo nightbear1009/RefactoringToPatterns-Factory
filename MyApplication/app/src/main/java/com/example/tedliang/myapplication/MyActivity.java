@@ -30,13 +30,9 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         Parser parser = new Parser();
-        parser.setNodeDecode(true);
+        parser.getStringNodeParingOption().setNodeDecode(true);
         Node node = StringParser.find(parser);
         node.getTitle();
-
-
-
-        
     }
 
 }

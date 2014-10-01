@@ -5,6 +5,6 @@ package com.example.tedliang.myapplication;
  */
 public class StringParser {
     public static Node find(Parser parser){
-        return Node.StringNode.createStringNode(parser.shouldDecode());
+        return parser.getStringNodeParingOption().createStringNode();
     }
 }

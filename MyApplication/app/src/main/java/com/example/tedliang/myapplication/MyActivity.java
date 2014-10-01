@@ -32,7 +32,7 @@ public class MyActivity extends Activity {
         Parser parser = new Parser();
         parser.setNodeDecode(true);
         Node node = StringParser.find(parser);
-        node.doSomething();
+        node.getTitle();
 
 
 
